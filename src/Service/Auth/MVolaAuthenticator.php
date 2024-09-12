@@ -1,9 +1,9 @@
 <?php
 
-namespace DahRomy\Mvola\Service\Auth;
+namespace DahRomy\MVola\Service\Auth;
 
-use DahRomy\Mvola\Exception\MVolaApiException;
-use DahRomy\Mvola\Exception\MVolaAuthenticationException;
+use DahRomy\MVola\Exception\MVolaApiException;
+use DahRomy\MVola\Exception\MVolaAuthenticationException;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\GuzzleException;
 use Psr\Cache\InvalidArgumentException;

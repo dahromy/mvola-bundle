@@ -1,6 +1,6 @@
 <?php
 
-namespace DahRomy\Mvola\DependencyInjection;
+namespace DahRomy\MVola\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

@@ -1,6 +1,6 @@
 <?php
 
-namespace DahRomy\Mvola\Service\Callback;
+namespace DahRomy\MVola\Service\Callback;
 
 interface MVolaCallbackHandlerInterface
 {

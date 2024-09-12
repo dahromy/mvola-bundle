@@ -54,8 +54,8 @@ MVOLA_AUTH_URL=https://sandbox.mvola.mg/token
 To initiate a transaction, you can use the `MVolaService`:
 
 ```php
-use DahRomy\Mvola\Service\MVolaService;
-use DahRomy\Mvola\Model\TransactionRequest;
+use DahRomy\MVola\Service\MVolaService;
+use DahRomy\MVola\Model\TransactionRequest;
 
 class PaymentController extends AbstractController
 {
@@ -118,7 +118,7 @@ The MVola Bundle provides a built-in callback handler that processes incoming ca
 1. Create an event subscriber:
 
 ```php
-use DahRomy\Mvola\Event\MVolaCallbackEvent;
+use DahRomy\MVola\Event\MVolaCallbackEvent;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 class MVolaCallbackSubscriber implements EventSubscriberInterface

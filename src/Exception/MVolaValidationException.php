@@ -1,6 +1,6 @@
 <?php
 
-namespace DahRomy\Mvola\Exception;
+namespace DahRomy\MVola\Exception;
 
 class MVolaValidationException extends MVolaApiException
 {

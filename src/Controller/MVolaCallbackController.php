@@ -1,8 +1,8 @@
 <?php
 
-namespace DahRomy\Mvola\Controller;
+namespace DahRomy\MVola\Controller;
 
-use DahRomy\Mvola\Service\Callback\MVolaCallbackHandlerInterface;
+use DahRomy\MVola\Service\Callback\MVolaCallbackHandlerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

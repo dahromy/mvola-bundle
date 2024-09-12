@@ -1,8 +1,8 @@
 <?php
 
-namespace DahRomy\Mvola\Service\Callback;
+namespace DahRomy\MVola\Service\Callback;
 
-use DahRomy\Mvola\Event\MVolaCallbackEvent;
+use DahRomy\MVola\Event\MVolaCallbackEvent;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 

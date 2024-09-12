@@ -1,6 +1,6 @@
 <?php
 
-namespace DahRomy\Mvola\Event;
+namespace DahRomy\MVola\Event;
 
 use Symfony\Contracts\EventDispatcher\Event;
 

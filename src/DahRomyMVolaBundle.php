@@ -1,6 +1,6 @@
 <?php
 
-namespace DahRomy\Mvola;
+namespace DahRomy\MVola;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

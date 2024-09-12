@@ -1,9 +1,9 @@
 <?php
 
-namespace DahRomy\Mvola\Service\Transaction;
+namespace DahRomy\MVola\Service\Transaction;
 
-use DahRomy\Mvola\Model\TransactionRequest;
-use DahRomy\Mvola\Service\ApiClient\MVolaApiClientInterface;
+use DahRomy\MVola\Model\TransactionRequest;
+use DahRomy\MVola\Service\ApiClient\MVolaApiClientInterface;
 
 
 class MVolaTransactionService implements MVolaTransactionServiceInterface

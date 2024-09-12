@@ -1,6 +1,6 @@
 <?php
 
-namespace DahRomy\Mvola\Service\Auth;
+namespace DahRomy\MVola\Service\Auth;
 
 interface MVolaAuthenticatorInterface
 {

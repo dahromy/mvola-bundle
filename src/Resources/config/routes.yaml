@@ -1,4 +1,4 @@
 mvola_callback:
     path: /mvola/callback
-    controller: DahRomy\Mvola\Controller\MVolaCallbackController::handleCallback
+    controller: DahRomy\MVola\Controller\MVolaCallbackController::handleCallback
     methods: [PUT]

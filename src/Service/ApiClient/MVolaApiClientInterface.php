@@ -1,6 +1,6 @@
 <?php
 
-namespace DahRomy\Mvola\Service\ApiClient;
+namespace DahRomy\MVola\Service\ApiClient;
 
 interface MVolaApiClientInterface
 {

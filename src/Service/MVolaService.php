@@ -1,11 +1,11 @@
 <?php
 
-namespace DahRomy\Mvola\Service;
+namespace DahRomy\MVola\Service;
 
-use DahRomy\Mvola\Model\TransactionRequest;
-use DahRomy\Mvola\Service\ApiClient\MVolaApiClientInterface;
-use DahRomy\Mvola\Service\Auth\MVolaAuthenticatorInterface;
-use DahRomy\Mvola\Service\Transaction\MVolaTransactionServiceInterface;
+use DahRomy\MVola\Model\TransactionRequest;
+use DahRomy\MVola\Service\ApiClient\MVolaApiClientInterface;
+use DahRomy\MVola\Service\Auth\MVolaAuthenticatorInterface;
+use DahRomy\MVola\Service\Transaction\MVolaTransactionServiceInterface;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Routing\RouterInterface;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace DahRomy\Mvola\Factory;
+namespace DahRomy\MVola\Factory;
 
-use DahRomy\Mvola\Service\ApiClient\MVolaApiClient;
+use DahRomy\MVola\Service\ApiClient\MVolaApiClient;
 use GuzzleHttp\Client;
 
 class MVolaApiClientFactory

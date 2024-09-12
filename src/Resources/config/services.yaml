@@ -1,8 +1,8 @@
 services:
-    DahRomy\Mvola\Factory\MVolaApiClientFactory: ~
+    DahRomy\MVola\Factory\MVolaApiClientFactory: ~
 
-    DahRomy\Mvola\Service\ApiClient\MVolaApiClientInterface:
-        factory: ['@DahRomy\Mvola\Factory\MVolaApiClientFactory', 'create']
+    DahRomy\MVola\Service\ApiClient\MVolaApiClientInterface:
+        factory: ['@DahRomy\MVola\Factory\MVolaApiClientFactory', 'create']
         arguments:
             $environment: '%mvola.environment%'
             $merchantNumber: '%mvola.merchant_number%'
@@ -13,8 +13,8 @@ services:
         arguments:
             - { retry_on_status: [429, 500, 502, 503, 504], max_retries: '%mvola.max_retries%', delay: '%mvola.retry_delay%' }
 
-    DahRomy\Mvola\Service\Auth\MVolaAuthenticatorInterface:
-        class: DahRomy\Mvola\Service\Auth\MVolaAuthenticator
+    DahRomy\MVola\Service\Auth\MVolaAuthenticatorInterface:
+        class: DahRomy\MVola\Service\Auth\MVolaAuthenticator
         arguments:
             $client: '@GuzzleHttp\ClientInterface'
             $authUrl: '%mvola.auth_url%'
@@ -23,25 +23,25 @@ services:
             $cache: '@cache.app'
             $cacheTtl: '%mvola.cache_ttl%'
 
-    DahRomy\Mvola\Service\Transaction\MVolaTransactionServiceInterface:
-        class: DahRomy\Mvola\Service\Transaction\MVolaTransactionService
+    DahRomy\MVola\Service\Transaction\MVolaTransactionServiceInterface:
+        class: DahRomy\MVola\Service\Transaction\MVolaTransactionService
         arguments:
-            $apiClient: '@DahRomy\Mvola\Service\ApiClient\MVolaApiClientInterface'
+            $apiClient: '@DahRomy\MVola\Service\ApiClient\MVolaApiClientInterface'
 
-    DahRomy\Mvola\Service\MVolaService:
+    DahRomy\MVola\Service\MVolaService:
         arguments:
-            $apiClient: '@DahRomy\Mvola\Service\ApiClient\MVolaApiClientInterface'
-            $authenticator: '@DahRomy\Mvola\Service\Auth\MVolaAuthenticatorInterface'
-            $transactionService: '@DahRomy\Mvola\Service\Transaction\MVolaTransactionServiceInterface'
+            $apiClient: '@DahRomy\MVola\Service\ApiClient\MVolaApiClientInterface'
+            $authenticator: '@DahRomy\MVola\Service\Auth\MVolaAuthenticatorInterface'
+            $transactionService: '@DahRomy\MVola\Service\Transaction\MVolaTransactionServiceInterface'
             $router: '@router'
 
-    DahRomy\Mvola\Service\Callback\MVolaCallbackHandlerInterface:
-        class: DahRomy\Mvola\Service\Callback\MVolaCallbackHandler
+    DahRomy\MVola\Service\Callback\MVolaCallbackHandlerInterface:
+        class: DahRomy\MVola\Service\Callback\MVolaCallbackHandler
         arguments:
             $logger: '@logger'
             $eventDispatcher: '@event_dispatcher'
 
-    DahRomy\Mvola\Controller\MVolaCallbackController:
+    DahRomy\MVola\Controller\MVolaCallbackController:
         public: true
         autowire: true
         autoconfigure: true

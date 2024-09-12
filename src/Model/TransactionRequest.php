@@ -1,9 +1,9 @@
 <?php
 
-namespace DahRomy\Mvola\Model;
+namespace DahRomy\MVola\Model;
 
-use DahRomy\Mvola\Exception\MVolaApiException;
-use DahRomy\Mvola\Exception\MVolaValidationException;
+use DahRomy\MVola\Exception\MVolaApiException;
+use DahRomy\MVola\Exception\MVolaValidationException;
 
 class TransactionRequest
 {

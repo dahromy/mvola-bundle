@@ -1,10 +1,10 @@
 <?php
 
-namespace DahRomy\Mvola\Service\ApiClient;
+namespace DahRomy\MVola\Service\ApiClient;
 
-use DahRomy\Mvola\Exception\MVolaApiException;
-use DahRomy\Mvola\Exception\MVolaNetworkException;
-use DahRomy\Mvola\Exception\MVolaRateLimitException;
+use DahRomy\MVola\Exception\MVolaApiException;
+use DahRomy\MVola\Exception\MVolaNetworkException;
+use DahRomy\MVola\Exception\MVolaRateLimitException;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\GuzzleException;
 
