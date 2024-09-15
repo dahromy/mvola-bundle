@@ -2,6 +2,7 @@
   "name": "dahromy/mvola-bundle",
   "description": "Symfony bundle for MVola Merchant Pay API",
   "type": "symfony-bundle",
+  "version": "1.0",
   "require": {
     "php": ">=7.4",
     "symfony/framework-bundle": "^5.0|^6.0|^7.0",
