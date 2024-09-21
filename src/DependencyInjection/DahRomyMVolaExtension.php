@@ -35,4 +35,9 @@ class DahRomyMVolaExtension extends Extension
         $container->setParameter('mvola.retry_delay', $config['retry_delay']);
         $container->setParameter('mvola.cache_ttl', $config['cache_ttl']);
     }
+
+    public function getAlias(): string
+    {
+        return 'mvola';
+    }
 }
